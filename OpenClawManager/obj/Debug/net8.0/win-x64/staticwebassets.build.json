@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "gvE/VIOg0oYv8AyVzU+n2YpKHTsL4I5YXE1oJLwRMGM=",
+  "Source": "OpenClawManager",
+  "BasePath": "_content/OpenClawManager",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "OpenClawManager\\wwwroot",
+      "Source": "OpenClawManager",
+      "ContentRoot": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\",
+      "BasePath": "_content/OpenClawManager",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\app.js",
+      "SourceId": "OpenClawManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\",
+      "BasePath": "_content/OpenClawManager",
+      "RelativePath": "app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.js"
+    },
+    {
+      "Identity": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\index.html",
+      "SourceId": "OpenClawManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\",
+      "BasePath": "_content/OpenClawManager",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\logService.js",
+      "SourceId": "OpenClawManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\",
+      "BasePath": "_content/OpenClawManager",
+      "RelativePath": "logService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logService.js"
+    }
+  ]
+}

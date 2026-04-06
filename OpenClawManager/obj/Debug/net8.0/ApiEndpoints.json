@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "OpenClawManager.Api.Controllers.OpenClawController",
+    "Method": "Install",
+    "RelativePath": "api/demo/install",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "packageManager",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OpenClawManager.Api.Controllers.OpenClawController",
+    "Method": "GetLogs",
+    "RelativePath": "api/demo/logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "last",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OpenClawManager.Api.Controllers.OpenClawController",
+    "Method": "Start",
+    "RelativePath": "api/demo/start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "port",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OpenClawManager.Api.Controllers.OpenClawController",
+    "Method": "GetStatus",
+    "RelativePath": "api/demo/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OpenClawManager.Api.Controllers.OpenClawController",
+    "Method": "Stop",
+    "RelativePath": "api/demo/stop",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OpenClawManager.Api.Controllers.OpenClawController",
+    "Method": "Uninstall",
+    "RelativePath": "api/demo/uninstall",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "removeAllData",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

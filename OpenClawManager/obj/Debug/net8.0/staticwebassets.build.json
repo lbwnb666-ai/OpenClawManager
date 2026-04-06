@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qQxoyR5uZcCtMN9k+ZgtVW/TzKPcSAtCt8ffabMb9PU=",
+  "Source": "OpenClawManager.Api",
+  "BasePath": "_content/OpenClawManager.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

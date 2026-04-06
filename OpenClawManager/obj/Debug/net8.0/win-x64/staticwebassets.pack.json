@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
+      "Id": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\logService.js",
+      "PackagePath": "staticwebassets\\logService.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.OpenClawManager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.build.OpenClawManager.props",
+      "PackagePath": "build\\OpenClawManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.buildMultiTargeting.OpenClawManager.props",
+      "PackagePath": "buildMultiTargeting\\OpenClawManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.buildTransitive.OpenClawManager.props",
+      "PackagePath": "buildTransitive\\OpenClawManager.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

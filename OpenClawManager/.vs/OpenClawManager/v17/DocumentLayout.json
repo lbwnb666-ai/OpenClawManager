@@ -1,0 +1,255 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OpenClawManager\\OpenClawManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3275D341-5412-4FFF-B330-7E37D0BC4AB7}|..\\OpenClawManager.Core\\OpenClawManager.Core.csproj|d:\\openclawmanager\\openclawmanager.core\\services\\simpleprocessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6544F519-F878-49DC-967D-D0B50039A422}|..\\OpenClawManager.Common\\OpenClawManager.Common.csproj|d:\\openclawmanager\\openclawmanager.common\\install\\openclawinstall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|d:\\openclawmanager\\openclawmanager\\controllers\\openclawcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|solutionrelative:controllers\\openclawcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|D:\\OpenClawManager\\OpenClawManager\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|D:\\OpenClawManager\\OpenClawManager\\wwwroot\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|solutionrelative:wwwroot\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|d:\\openclawmanager\\openclawmanager\\wwwroot\\logservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|solutionrelative:wwwroot\\logservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.api.csproj|D:\\OpenClawManager\\OpenClawManager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3275D341-5412-4FFF-B330-7E37D0BC4AB7}|..\\OpenClawManager.Core\\OpenClawManager.Core.csproj|d:\\openclawmanager\\openclawmanager.core\\services\\ilogstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3275D341-5412-4FFF-B330-7E37D0BC4AB7}|..\\OpenClawManager.Core\\OpenClawManager.Core.csproj|d:\\openclawmanager\\openclawmanager.core\\services\\logstreamservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3275D341-5412-4FFF-B330-7E37D0BC4AB7}|..\\OpenClawManager.Core\\OpenClawManager.Core.csproj|d:\\openclawmanager\\openclawmanager.core\\services\\logtrackerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6544F519-F878-49DC-967D-D0B50039A422}|..\\OpenClawManager.Common\\OpenClawManager.Common.csproj|d:\\openclawmanager\\openclawmanager.common\\processclass\\autolaunchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6544F519-F878-49DC-967D-D0B50039A422}|..\\OpenClawManager.Common\\OpenClawManager.Common.csproj|d:\\openclawmanager\\openclawmanager.common\\install\\installenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|D:\\OpenClawManager\\OpenClawManager\\openclawmanager.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|solutionrelative:openclawmanager.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|D:\\OpenClawManager\\OpenClawManager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B46B35C8-00C7-4993-83A4-891340E47A8B}|OpenClawManager.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ILogStreamService.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\ILogStreamService.cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Core\\Services\\ILogStreamService.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\ILogStreamService.cs",
+              "RelativeToolTip": "..\\OpenClawManager.Core\\Services\\ILogStreamService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T02:06:56.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LogStreamService .cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\LogStreamService .cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Core\\Services\\LogStreamService .cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\LogStreamService .cs",
+              "RelativeToolTip": "..\\OpenClawManager.Core\\Services\\LogStreamService .cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAkwKwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T02:02:47.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OpenClawController.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\Controllers\\OpenClawController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OpenClawController.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\Controllers\\OpenClawController.cs",
+              "RelativeToolTip": "Controllers\\OpenClawController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAxwEwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:19:27.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpenClawInstall.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Common\\Install\\OpenClawInstall.cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Common\\Install\\OpenClawInstall.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Common\\Install\\OpenClawInstall.cs",
+              "RelativeToolTip": "..\\OpenClawManager.Common\\Install\\OpenClawInstall.cs",
+              "ViewState": "AQIAABgBAAAAAAAAAAA5wCABAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T13:00:09.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.js",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\app.js",
+              "RelativeDocumentMoniker": "wwwroot\\app.js",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\app.js",
+              "RelativeToolTip": "wwwroot\\app.js",
+              "ViewState": "AQIAAEgAAAAAAAAAAIA+wFMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-03T09:46:27.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-03T09:46:07.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAA/wC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:02:58.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleProcessManager.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\SimpleProcessManager.cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Core\\Services\\SimpleProcessManager.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\SimpleProcessManager.cs",
+              "RelativeToolTip": "..\\OpenClawManager.Core\\Services\\SimpleProcessManager.cs",
+              "ViewState": "AQIAAOoAAAAAAAAAAAAvwPUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T05:00:53.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogTrackerService.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\LogTrackerService.cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Core\\Services\\LogTrackerService.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Core\\Services\\LogTrackerService.cs",
+              "RelativeToolTip": "..\\OpenClawManager.Core\\Services\\LogTrackerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T02:08:21.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "logService.js",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\logService.js",
+              "RelativeDocumentMoniker": "wwwroot\\logService.js",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\wwwroot\\logService.js",
+              "RelativeToolTip": "wwwroot\\logService.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-04T02:12:37.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InstallEnums.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Common\\Install\\InstallEnums.cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Common\\Install\\InstallEnums.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Common\\Install\\InstallEnums.cs",
+              "RelativeToolTip": "..\\OpenClawManager.Common\\Install\\InstallEnums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T13:00:19.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AutoLaunchService.cs",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager.Common\\ProcessClass\\AutoLaunchService.cs",
+              "RelativeDocumentMoniker": "..\\OpenClawManager.Common\\ProcessClass\\AutoLaunchService.cs",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager.Common\\ProcessClass\\AutoLaunchService.cs",
+              "RelativeToolTip": "..\\OpenClawManager.Common\\ProcessClass\\AutoLaunchService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T09:26:51.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OpenClawManager.Api.csproj",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\OpenClawManager.Api.csproj",
+              "RelativeDocumentMoniker": "OpenClawManager.Api.csproj",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\OpenClawManager.Api.csproj",
+              "RelativeToolTip": "OpenClawManager.Api.csproj",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-03T12:16:05.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\OpenClawManager\\OpenClawManager\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\OpenClawManager\\OpenClawManager\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-03T12:29:01.833Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

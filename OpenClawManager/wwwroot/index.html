@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>🦞 OpenClaw 管理器</title>
+    <style>
+        /* 引入像素字体 */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+        }
+
+        /* 主色调 ———— 我的世界绿色草地块风格 */
+        :root {
+            --mine-green-dark: #2c4a2c; /* 深色草地块 */
+            --mine-green-mid: #3c6e3c; /* 中等草绿 */
+            --mine-green-light: #5a9e4e; /* 亮草绿 / 藤蔓 */
+            --mine-dirt: #8b5a2b; /* 泥土色边框 */
+            --mine-stone: #6b6b6b; /* 石头灰点缀 */
+            --mine-gold: #f3b33d; /* 金块色用于高亮 */
+            --mine-log: #6b4c2c; /* 原木色 */
+            --mine-cream: #e5d7b0; /* 骨粉/羊毛奶油色 */
+            --pixel-border-dark: #1e321e;
+            --pixel-shadow: #2a3b2a;
+            --text-bright: #f5f2c5;
+            --text-dim: #c7c19a;
+        }
+
+        body {
+            font-family: 'Press Start 2P', 'Courier New', monospace;
+            font-size: 20px; /* 从12px增大到16px，提升默认字号 */
+            background: var(--mine-green-dark);
+            background-image: repeating-linear-gradient( 0deg, rgba(40, 70, 40, 0.4) 0px, rgba(40, 70, 40, 0.4) 2px, transparent 2px, transparent 6px );
+            color: var(--text-bright);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 20px; /* 稍增内边距 */
+        }
+
+        /* 像素块装饰 + 草块边角 */
+        .pixel-border {
+            box-shadow: -3px 0 0 0 var(--mine-dirt), 3px 0 0 0 var(--mine-dirt), 0 -3px 0 0 var(--mine-dirt), 0 3px 0 0 var(--mine-dirt);
+        }
+
+        /* 标题区 */
+        .header {
+            background: var(--mine-green-mid);
+            border: 5px solid var(--mine-dirt);
+            padding: 1.8rem 1rem;
+            margin-bottom: 32px;
+            text-align: center;
+            position: relative;
+            box-shadow: inset 0 0 0 2px var(--mine-green-light), 8px 8px 0px 0px rgba(0,0,0,0.3);
+        }
+
+            .header h1 {
+                font-size: 22px; /* 增大标题 */
+                letter-spacing: 2px;
+                color: var(--mine-gold);
+                text-shadow: 4px 4px 0 #3a2a1a;
+            }
+
+                .header h1::before {
+                    content: "⚒️ ";
+                    filter: drop-shadow(2px 2px 0 #2c2c1c);
+                }
+
+                .header h1::after {
+                    content: " ⛏️";
+                    filter: drop-shadow(2px 2px 0 #2c2c1c);
+                }
+
+        .subtitle {
+            font-size: 11px;
+            background: var(--mine-log);
+            display: inline-block;
+            padding: 6px 12px;
+            margin-top: 16px;
+            color: var(--mine-cream);
+            border: 1px solid var(--mine-dirt);
+        }
+
+        .container {
+            max-width: 1200px; 
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* 卡片 = 工作台风格 */
+        .card {
+            background: var(--mine-green-light);
+            border: 5px solid var(--mine-dirt);
+            padding: 1.5rem;
+            margin-bottom: 32px;
+            position: relative;
+            box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.4);
+        }
+
+            .card::before {
+                content: " ";
+                position: absolute;
+                top: -8px;
+                left: -8px;
+                right: -8px;
+                bottom: -8px;
+                background: var(--pixel-border-dark);
+                z-index: -2;
+            }
+
+        .card-title {
+            font-size: 16px; /* 增大 */
+            background: var(--mine-log);
+            display: inline-block;
+            padding: 6px 14px;
+            margin-bottom: 20px;
+            color: var(--mine-cream);
+            border: 1px solid var(--mine-dirt);
+            letter-spacing: 1px;
+        }
+
+        /* 状态面板 */
+        .status-box {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: #2c4a2c;
+            border: 4px solid var(--mine-dirt);
+            padding: 1.2rem;
+            background-image: repeating-linear-gradient(45deg, #3a623a 0px, #3a623a 2px, #2e542e 2px, #2e542e 6px);
+        }
+
+        .status-icon {
+            width: 36px; /* 加大指示器 */
+            height: 32px;
+            background: #6b4c2c;
+            border: 2px solid #2e2b1f;
+            position: relative;
+            box-shadow: inset 0 0 0 1px #b88d4a;
+        }
+
+            .status-icon.running {
+                background: #3f9e3a;
+                border-color: #b6ff00;
+                box-shadow: 0 0 0 2px #6eff00;
+                animation: pulse-green 0.8s steps(3) infinite;
+            }
+
+        @keyframes pulse-green {
+            0% {
+                opacity: 0.8;
+                background: #3f9e3a;
+            }
+
+            100% {
+                opacity: 1;
+                background: #7ccf5c;
+                box-shadow: 0 0 0 2px #aaff66;
+            }
+        }
+
+        .status-text {
+            font-size: 18px; /* 增大 */
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0 #1e321e;
+        }
+
+            .status-text.running {
+                color: #c0ffa0;
+            }
+
+        #statusDetail {
+            font-size: 14px; /* 增大 */
+            color: #d9d49c;
+            margin-top: 8px;
+        }
+
+        /* 按钮组 */
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 16px; /* 从10px增大 */
+            padding: 14px 8px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            position: relative;
+            background: #6b4c2c;
+            color: #efeac5;
+            border-bottom: 6px solid #3a2a1a;
+            transition: 0.05s linear;
+            text-shadow: 1px 1px 0 #2a2a1a;
+            box-shadow: inset 0 1px 0 #aa884a;
+        }
+
+            .btn:active {
+                transform: translateY(2px);
+                border-bottom-width: 3px;
+            }
+
+            .btn:disabled {
+                opacity: 0.6;
+                transform: none;
+                filter: grayscale(0.2);
+                cursor: not-allowed;
+                border-bottom-width: 6px;
+            }
+
+        .btn-install {
+            background: #5e8c5a;
+            border-bottom-color: #2b4a1e;
+        }
+
+        .btn-start {
+            background: #447c3c;
+            border-bottom-color: #1e451a;
+        }
+
+        .btn-stop {
+            background: #aa6c3a;
+            border-bottom-color: #6e3a1a;
+        }
+
+        .btn-uninstall {
+            background: #9c4a2c;
+            border-bottom-color: #612a18;
+        }
+
+        .btn-install:hover:not(:disabled) {
+            background: #72a86a;
+        }
+
+        .btn-start:hover:not(:disabled) {
+            background: #5ca052;
+        }
+
+        .btn-stop:hover:not(:disabled) {
+            background: #ca8240;
+        }
+
+        .btn-uninstall:hover:not(:disabled) {
+            background: #b85c34;
+        }
+
+        /* 日志区 */
+        .log-container {
+            background: #1d2b1a;
+            border: 5px solid #5f3f1c;
+            padding: 14px;
+            height: 360px; /* 稍增高 */
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px; /* 增大 */
+            line-height: 1.5;
+            color: #cfecb0;
+            box-shadow: inset 0 0 0 2px #2f4d2a;
+        }
+
+        .log-line {
+            margin: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            word-break: break-all;
+            border-left: 2px solid #5f7a42;
+        }
+
+            .log-line::before {
+                content: "►";
+                position: absolute;
+                left: 0px;
+                color: #c0cf6e;
+                font-size: 10px;
+            }
+
+        .log-info {
+            color: #cbe5a2;
+        }
+
+        .log-success {
+            color: #8bc34a;
+            text-shadow: 0 0 2px #2f6b1f;
+        }
+
+        .log-error {
+            color: #ff8a6f;
+            background: #42281c;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .log-warning {
+            color: #f3c26b;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 14px;
+            height: 14px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #2c3e1f;
+            border: 1px solid #755b32;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ac874a;
+            border: 2px solid #e2c28b;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #cb9e5a;
+            }
+
+        /* 页脚 + GitHub 链接 */
+        .footer-deco {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 10px;
+            color: #9ec284;
+        }
+
+            .footer-deco a {
+                color: #f3b33d;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.1s linear;
+            }
+
+                .footer-deco a:hover {
+                    text-decoration: underline;
+                    color: #ffd966;
+                }
+
+        /* 响应式调整 */
+        @media (max-width: 640px) {
+            body {
+                padding: 16px;
+                font-size: 14px;
+            }
+
+            .btn-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .status-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 12px;
+                padding: 12px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚡ OPENCLAW MANAGER</h1>
+        <div class="subtitle">◈ PIXEL CRAFT EDITION ◈</div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-title">⛏️ SERVER STATUS ⛏️</div>
+            <div class="status-box">
+                <div id="statusIcon" class="status-icon"></div>
+                <div>
+                    <div id="statusText" class="status-text">OFFLINE</div>
+                    <div id="statusDetail" class="status-detail">等待指令 / 待机中</div>
+                </div>
+            </div>
+            <div class="btn-grid">
+                <button id="btnStart" class="btn btn-start" disabled>▶ 启动 / START</button>
+                <button id="btnStop" class="btn btn-stop" disabled>⏹ 停止 / STOP</button>
+                <button id="btnInstall" class="btn btn-install">📦 安装 / INSTALL</button>
+                <button id="btnUninstall" class="btn btn-uninstall">🗑 卸载 / UNINSTALL</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📜 控制台日志 / CONSOLE</div>
+            <div id="logContainer" class="log-container">
+                <div class="log-line log-info">[系统] 像素工作台就绪</div>
+                <div class="log-line log-info">[系统] OpenClaw 管理器已加载</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-deco">
+        🧱 Go to 
+        <a href="https://github.com/lbwnb666-ai" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <script src="logService.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

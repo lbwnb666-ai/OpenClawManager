@@ -1,0 +1,13 @@
+D:\OpenClawManager\OpenClawManager.Common\bin\Debug\net8.0\OpenClawManager.Common.deps.json
+D:\OpenClawManager\OpenClawManager.Common\bin\Debug\net8.0\OpenClawManager.Common.dll
+D:\OpenClawManager\OpenClawManager.Common\bin\Debug\net8.0\OpenClawManager.Common.pdb
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.AssemblyInfoInputs.cache
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.AssemblyInfo.cs
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.csproj.CoreCompileInputs.cache
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.sourcelink.json
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.dll
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\refint\OpenClawManager.Common.dll
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.pdb
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\ref\OpenClawManager.Common.dll
+D:\OpenClawManager\OpenClawManager.Common\obj\Debug\net8.0\OpenClawManager.Common.csproj.AssemblyReference.cache
