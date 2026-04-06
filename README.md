@@ -166,8 +166,8 @@ dotnet publish -c Release -r osx-x64 --self-contained true /p:PublishSingleFile=
 MIT License © 2026 OpenClaw Manager Contributors
 
 ## 🙏 致谢
-`OpenClaw` —— 强大的 AI 网关核心
-`Xie Teacher` —— 灵感来源 技术支持
+- `OpenClaw` —— 强大的 AI 网关核心
+- `Xie Teacher` —— 灵感来源 技术支持
 
 
 <p align="center"> Made with 💙 and 🦞 </p>
